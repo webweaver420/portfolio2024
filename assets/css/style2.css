@@ -98,13 +98,13 @@ em {
 }
 
 #section1 .main_text h2 {
-    font-family: 'GmarketSans';
+    font-family: "NeoGeoTrial-Thin";
     font-size: 10.416vw;
     color: #fff;
     font-weight: 300;
     margin-left: 3vw;
     margin-top: 6.5vh;
-    line-height: 1.1;
+    line-height: -1.2;
     letter-spacing: -0.9vw;
     /* text-transform: uppercase; */
 }
