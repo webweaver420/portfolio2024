@@ -6,12 +6,13 @@
 }
 
 body {
-    width: 1920px;
+    width: 100%;
     height: 100vh;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
+    /* margin: 0 auto; */
     /* 
     display: flex;
     flex-direction: column;
@@ -22,7 +23,6 @@ body {
 /* 헤더영역 */
 #header {
     width: 100%;
-    height: 50px;
     position: fixed;
     left: 0;
     top: 0;
@@ -67,7 +67,6 @@ em {
 /* 메인 */
 #main {
     flex: 1;
-    width: 100%;
 }
 
 /* 섹션1영역 */
@@ -130,16 +129,15 @@ em {
 #section2 .article1 .left_section {
     width: 40%;
     height: 100vh;
-    /* background-color: #e3e3e3; */
 }
 
 #section2 .article1 .left_section h2 {
     font-family: 'Poppins';
     font-weight: 100;
-    font-size: 15.625vw;
+    font-size: 13.3vw;
     text-transform: uppercase;
     line-height: 0.3;
-    letter-spacing: -2vw;
+    letter-spacing: -1.8vw;
     /* 글자와 이미지 사이 간격조정 */
     margin-left: 3vw;
 }
@@ -150,7 +148,7 @@ em {
 }
 
 #section2 .article1 .left_section .imgwrap .img {
-    width: 80%;
+    width: 85%;
     height: 100%;
     background-image: url(../img/designimg01.jpg);
     background-size: cover;
@@ -164,7 +162,6 @@ em {
 #section2 .article1 .right_section {
     width: 60%;
     height: 100vh;
-    /* background-color: #d3d3d3; */
 }
 
 #section2 .article1 .right_section h3 {
@@ -206,7 +203,6 @@ em {
 #section2 .article2 .left_section {
     width: 60%;
     height: 100vh;
-    background-color: #d3d3d3;
     text-align: right;
 }
 
@@ -215,14 +211,14 @@ em {
     font-size: 2.604vw;
     margin-bottom: 2rem;
     margin-top: 60vh;
-    padding-right: 5vw;
+    padding-right: 4vw;
 }
 
 #section2 .article2 .left_section p {
     font-family: "nanumSquareNeo";
     font-size: 0.677vw;
     line-height: 1.6;
-    padding-right: 5vw;
+    padding-right: 4vw;
     margin-bottom: 5vw;
 }
 
@@ -234,13 +230,11 @@ em {
     text-transform: uppercase;
     border-bottom: 1px solid #000;
     padding: 0 0 0.5vw 5vw;
-    margin-left: 20vw;
 }
 
 #section2 .article2 .right_section {
     width: 40%;
     height: 100vh;
-    background-color: #e3e3e3;
 }
 
 #section2 .article2 .right_section .imgwrap {
@@ -249,14 +243,74 @@ em {
 }
 
 #section2 .article2 .right_section .imgwrap .img {
-    width: 80%;
+    width: 85%;
     height: 100%;
     background-image: url(../img/designimg02.jpg);
     background-size: cover;
     background-position: left center;
-    position: relative;
     margin-left: 4vw;
-    z-index: 9999;
+}
+
+/* 아티클3영역 */
+#section2 .article3 {
+    margin-top: 25vh;
+}
+
+#section2 .article3 .left_section {
+    width: 70%;
+    height: 100vh;
+    display: block;
+}
+
+#section2 .article3 .left_section .imgwrap {
+    width: 100%;
+    height: 100vh;
+}
+
+#section2 .article3 .left_section .imgwrap .img {
+    width: 90%;
+    height: 70%;
+    background-image: url(../img/designimg03.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 5vw;
+}
+
+#section2 .article3 .right_section {
+    width: 100%;
+    height: 100vh;
+}
+
+#section2 .article3 .right_section h3 {
+    font-family: 'Italiana';
+    font-size: 2.604vw;
+    margin-bottom: 2rem;
+    margin-top: -20vh;
+    margin-left: 53vw;
+}
+
+#section2 .article3 .right_section p {
+    font-family: "nanumSquareNeo";
+    font-size: 0.677vw;
+    line-height: 1.6;
+    width: 100%;
+    height: auto;
+    margin-left: -32vw;
+    margin-bottom: 5vw;
+    text-align: right;
+}
+
+#section2 .article3 .right_section .btn {
+    font-family: 'Poppins';
+    font-weight: 300;
+    font-size: 0.729vw;
+    letter-spacing: 0.7vw;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    padding: 0 0 0.5vw 5vw;
+    margin-left: 58vw;
 }
 
 #section3 {}
