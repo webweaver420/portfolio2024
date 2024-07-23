@@ -1,23 +1,13 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    width: 100%;
+    /* width: 100%; */
+    width: 1920px;
     height: 100vh;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
-    /* 
-    display: flex;
-    flex-direction: column;
-    컨텐츠들이 세로로 정렬
-    */
 }
 
 /* 헤더영역 */
@@ -37,233 +27,235 @@ body {
 }
 
 #header h1 span {
-    font-size: 1.5625vw;
+    font-size: 30px;
     font-weight: 900;
-    display: block;
 }
 
 #header h1 em {
-    font-size: 1.25vw;
-    font-weight: 100;
-    letter-spacing: 0.88vw;
+    font-size: 24px;
+    font-weight: 200;
+    letter-spacing: 0.8vw;
+    color: #fff;
 }
 
 #header h1 span,
 em {
+    display: block;
     text-transform: uppercase;
     color: #fff;
     padding-left: 1vw;
 }
 
 #header nav {
-    font-family: 'Poppins';
-    font-size: 1.5625vw;
+    font-size: 30px;
     font-weight: 900;
     text-transform: uppercase;
     color: #fff;
+    font-family: 'Poppins';
     padding-right: 1vw;
 }
 
-/* 메인 */
-#main {
-    flex: 1;
-}
-
-/* 섹션1영역 */
+/* 섹션1 메인이미지영역 */
 #section1 {
-    width: 100%;
+    overflow: hidden;
     height: 250vh;
     background-image: url(../img/mainimage.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     padding-top: 60vh;
-    overflow: hidden;
 }
 
 #section1 .sub_text {
-    width: 25vw;
-    font-family: 'Iropke Batang';
-    font-size: 0.729vw;
+    min-width: 360px;
+    font-size: 16px;
     font-weight: 100;
     line-height: 1.5;
     color: #fff;
+    font-family: 'Iropke Batang';
     margin-top: -20vh;
     margin-left: 4vw;
 }
 
 #section1 .main_text {
-    margin-left: 3vw;
     margin-top: 10vh;
+    margin-left: 3vw;
     display: flex;
     flex-direction: column;
     gap: 1vh;
 }
 
 #section1 .main_text div {
-    font-family: 'GmarketSans';
     /* font-family: "NeoGeoTrial-Thin"; */
-    font-size: 10.416vw;
+    /* font-size: 10.416vw; */
+    font-size: 200px;
     font-weight: 300;
     letter-spacing: -1.2vw;
     line-height: 0.9;
     text-transform: uppercase;
     color: #fff;
+    font-family: 'GmarketSans';
 }
 
-/* 섹션2영역 */
-#section2 {
-    width: 100%;
+/* 섹션영역 */
+#section2,
+#section3,
+#section4,
+#section5,
+#section6 {
     height: inherit;
 }
 
-/* 아티클1영역 */
+/* 아티클1 디자인소개영역 */
 #section2 .article1 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 25vh;
+    margin-top: 50vh;
 }
 
 #section2 .article1 .left_section {
     width: 40%;
-    height: 100vh;
 }
 
 #section2 .article1 .left_section h2 {
     font-family: 'Poppins';
+    /* font-size: 13.3vw; */
+    font-size: 300px;
     font-weight: 100;
-    font-size: 13.3vw;
     text-transform: uppercase;
-    line-height: 0.3;
-    letter-spacing: -1.8vw;
-    /* 글자와 이미지 사이 간격조정 */
+    line-height: 0.4;
+    letter-spacing: -2.1vw;
     margin-left: 3vw;
 }
 
 #section2 .article1 .left_section .imgwrap {
-    width: 100%;
     height: 100vh;
 }
 
 #section2 .article1 .left_section .imgwrap .img {
-    width: 85%;
+    width: 100%;
     height: 100%;
     background-image: url(../img/designimg01.jpg);
     background-size: cover;
     background-position: left center;
-    position: relative;
     margin-top: -3vh;
     margin-left: 4vw;
+    position: relative;
     z-index: 9999;
 }
 
 #section2 .article1 .right_section {
     width: 60%;
-    height: 100vh;
 }
 
 #section2 .article1 .right_section h3 {
     font-family: 'Italiana';
-    font-size: 2.604vw;
+    /* font-size: 2.604vw; */
+    font-size: 50px;
+    font-weight: 100;
     margin-bottom: 2rem;
     margin-top: 40vh;
-    margin-left: 4vw;
+    margin-left: 10vw;
 }
 
 #section2 .article1 .right_section p {
     font-family: "nanumSquareNeo";
-    font-size: 0.677vw;
+    /* font-size: 0.677vw; */
+    font-size: 18px;
+    font-weight: 100;
     line-height: 1.6;
-    margin-left: 4vw;
+    margin-left: 10vw;
     margin-bottom: 5vw;
 }
 
 #section2 .article1 .right_section .btn {
     font-family: 'Poppins';
+    /* font-size: 0.729vw; */
+    font-size: 18px;
     font-weight: 300;
-    font-size: 0.729vw;
     letter-spacing: 0.7vw;
     text-transform: uppercase;
     border-bottom: 1px solid #000;
     padding: 0 0 0.5vw 5vw;
-    margin-left: 20vw;
+    margin-left: 28vw;
 }
 
-/* 아티클2영역 */
+/* 아티클2 디자인소개영역 */
 #section2 .article2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin-top: 25vh;
+    margin-top: 40vh;
 }
 
 #section2 .article2 .left_section {
-    width: 60%;
-    height: 100vh;
+    width: 40%;
     text-align: right;
 }
 
 #section2 .article2 .left_section h3 {
     font-family: 'Italiana';
-    font-size: 2.604vw;
+    /* font-size: 2.604vw; */
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: 65vh;
+    margin-right: -12vw;
     margin-bottom: 2rem;
-    margin-top: 60vh;
-    padding-right: 4vw;
 }
 
 #section2 .article2 .left_section p {
     font-family: "nanumSquareNeo";
-    font-size: 0.677vw;
+    /* font-size: 0.677vw; */
+    font-size: 18px;
+    font-weight: 100;
     line-height: 1.6;
-    padding-right: 4vw;
+    margin-right: -12vw;
     margin-bottom: 5vw;
 }
 
 #section2 .article2 .left_section .btn {
     font-family: 'Poppins';
+    font-size: 18px;
+    /* font-size: 0.729vw; */
     font-weight: 300;
-    font-size: 0.729vw;
     letter-spacing: 0.7vw;
     text-transform: uppercase;
     border-bottom: 1px solid #000;
     padding: 0 0 0.5vw 5vw;
+    margin-right: -12vw;
 }
 
+
 #section2 .article2 .right_section {
-    width: 40%;
-    height: 100vh;
+    width: 60%;
 }
 
 #section2 .article2 .right_section .imgwrap {
-    width: 100%;
     height: 100vh;
 }
 
 #section2 .article2 .right_section .imgwrap .img {
-    width: 85%;
+    width: 60%;
     height: 100%;
     background-image: url(../img/designimg02.jpg);
     background-size: cover;
     background-position: left center;
-    margin-left: 4vw;
+    margin-left: 18vw;
 }
 
-/* 아티클3영역 */
+/* 아티클3 디자인소개영역 */
 #section2 .article3 {
-    margin-top: 25vh;
+    margin-top: 40vh;
 }
 
 #section2 .article3 .left_section {
     width: 70%;
-    height: 100vh;
-    display: block;
 }
 
 #section2 .article3 .left_section .imgwrap {
-    width: 100%;
     height: 100vh;
 }
 
@@ -279,13 +271,14 @@ em {
 }
 
 #section2 .article3 .right_section {
-    width: 100%;
-    height: 100vh;
+    width: 50%;
 }
 
 #section2 .article3 .right_section h3 {
     font-family: 'Italiana';
-    font-size: 2.604vw;
+    /* font-size: 2.604vw; */
+    font-size: 50px;
+    font-weight: 100;
     margin-bottom: 2rem;
     margin-top: -20vh;
     margin-left: 53vw;
@@ -293,11 +286,13 @@ em {
 
 #section2 .article3 .right_section p {
     font-family: "nanumSquareNeo";
-    font-size: 0.677vw;
+    /* font-size: 0.677vw; */
+    font-size: 18px;
+    font-weight: 100;
     line-height: 1.6;
     width: 100%;
     height: auto;
-    margin-left: -32vw;
+    margin-left: 18vw;
     margin-bottom: 5vw;
     text-align: right;
 }
@@ -305,16 +300,357 @@ em {
 #section2 .article3 .right_section .btn {
     font-family: 'Poppins';
     font-weight: 300;
-    font-size: 0.729vw;
+    /* font-size: 0.729vw; */
+    font-size: 18px;
+    font-weight: 300;
     letter-spacing: 0.7vw;
     text-transform: uppercase;
     border-bottom: 1px solid #000;
     padding: 0 0 0.5vw 5vw;
-    margin-left: 58vw;
+    margin-left: 62vw;
 }
 
-#section3 {}
+#section3 {
+    height: 80vh;
+    margin-top: 50vh;
+    position: relative;
+}
 
-#section4 {}
+#section3 h2 span,
+em {
+    position: absolute;
+    display: inline-block;
+    font-family: 'Poppins';
+    font-size: 300px;
+    font-weight: 100;
+    letter-spacing: -2vw;
+    text-transform: uppercase;
+    color: #222;
+}
 
-#section5 {}
+#section3 h2 span {
+    left: 11vw;
+    top: 15vh;
+}
+
+#section3 h2 em {
+    right: 13vw;
+    top: 15vh;
+}
+
+#section3 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#section3 div .slider {
+    width: 500px;
+    height: 700px;
+    background: gray;
+    position: relative;
+    z-index: 9999;
+}
+
+#section3 p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto+Flex';
+    text-transform: uppercase;
+    margin-top: 3vh;
+    line-height: 0.5;
+}
+
+/* 아티클4 코딩소개영역 */
+#section4 .article4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50vh;
+}
+
+#section4 .article4 .left_section {
+    width: 40%;
+    text-align: right;
+}
+
+#section4 .article4 .left_section h3 {
+    font-family: 'Italiana';
+    /* font-size: 2.604vw; */
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: 60vh;
+    margin-bottom: 2rem;
+}
+
+#section4 .article4 .left_section p {
+    font-family: "nanumSquareNeo";
+    /* font-size: 0.677vw; */
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.6;
+    margin-bottom: 5vw;
+}
+
+#section4 .article4 .left_section .btn {
+    font-family: 'Poppins';
+    font-size: 18px;
+    /* font-size: 0.729vw; */
+    font-weight: 300;
+    letter-spacing: 0.7vw;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    padding: 0 0 0.5vw 5vw;
+}
+
+#section4 .article4 .right_section {
+    width: 60%;
+}
+
+#section4 .article4 .right_section h2 {
+    font-family: 'Poppins';
+    /* font-size: 13.3vw; */
+    font-size: 270px;
+    font-weight: 100;
+    text-transform: uppercase;
+    line-height: 0.4;
+    letter-spacing: -2.2vw;
+    margin-left: 4vw;
+}
+
+#section4 .article4 .right_section .imgwrap {
+    height: 100vh;
+}
+
+#section4 .article4 .right_section .imgwrap .img {
+    width: 80%;
+    height: 100%;
+    background-image: url(../img/designimg04.jpg);
+    background-size: cover;
+    background-position: left center;
+    margin-left: 5vw;
+    margin-top: -3vh;
+    position: relative;
+    z-index: 9999;
+}
+
+/* 아티클5 코딩소개영역 */
+#section4 .article5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+}
+
+#section4 .article5 .left_section {
+    width: 50%;
+    text-align: right;
+}
+
+#section4 .article5 .left_section .imgwrap {
+    width: 100%;
+    height: 100vh;
+}
+
+#section4 .article5 .left_section .imgwrap .img {
+    width: 80%;
+    height: 100%;
+    background-image: url(../img/designimg05.jpg);
+    background-size: cover;
+    background-position: left center;
+    margin-left: 5vw;
+}
+
+#section4 .article5 .right_section {
+    width: 50%;
+}
+
+#section4 .article5 .right_section h3 {
+    font-family: 'Italiana';
+    /* font-size: 2.604vw; */
+    font-size: 50px;
+    font-weight: 100;
+    margin-top: 60vh;
+    margin-bottom: 2rem;
+}
+
+#section4 .article5 .right_section p {
+    font-family: "nanumSquareNeo";
+    /* font-size: 0.677vw; */
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.6;
+    margin-bottom: 5vw;
+}
+
+#section4 .article5 .right_section .btn {
+    font-family: 'Poppins';
+    font-size: 18px;
+    /* font-size: 0.729vw; */
+    font-weight: 300;
+    letter-spacing: 0.7vw;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    padding: 0 0 0.5vw 5vw;
+    margin-left: 33vw;
+}
+
+/* 아티클6 디자인소개영역 */
+#section4 .article6 {
+    margin-top: 40vh;
+}
+
+#section4 .article6 .left_section {
+    width: 80%;
+}
+
+#section4 .article6 .left_section .imgwrap {
+    height: 100vh;
+}
+
+#section4 .article6 .left_section .imgwrap .img {
+    width: 90%;
+    height: 70%;
+    background-image: url(../img/designimg06.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 20vw;
+}
+
+#section4 .article6 .right_section {
+    width: 50%;
+}
+
+#section4 .article6 .right_section h3 {
+    font-family: 'Italiana';
+    /* font-size: 2.604vw; */
+    font-size: 50px;
+    font-weight: 100;
+    margin-bottom: 2rem;
+    margin-top: -20vh;
+    margin-left: 77vw;
+}
+
+#section4 .article6 .right_section p {
+    font-family: "nanumSquareNeo";
+    /* font-size: 0.677vw; */
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.6;
+    width: 100%;
+    height: auto;
+    margin-left: 41vw;
+    margin-bottom: 5vw;
+    text-align: right;
+}
+
+#section4 .article6 .right_section .btn {
+    font-family: 'Poppins';
+    font-weight: 300;
+    /* font-size: 0.729vw; */
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 0.7vw;
+    text-transform: uppercase;
+    border-bottom: 1px solid #000;
+    padding: 0 0 0.5vw 5vw;
+    margin-left: 82vw;
+}
+
+#footer {
+    width: 100%;
+    height: 100vh;
+    margin-top: 20vh;
+    background: url(../img/footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#footer h4 {
+    font-family: 'IropkeBatang';
+    font-size: 22px;
+    padding-top: 10vh;
+    margin-left: 3vw;
+    margin-bottom: 2vh;
+    color: #fff;
+}
+
+#footer>p {
+    font-family: 'IropkeBatang';
+    font-size: 16px;
+    margin-left: 3vw;
+    margin-bottom: 10vh;
+    color: #fff;
+}
+
+#footer div {
+    font-family: 'GmarketSans';
+    font-size: 20px;
+    font-weight: 200;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1.5;
+    margin-left: 3vw;
+}
+
+@media screen and (max-width: 1940px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        width: 100%;
+    }
+
+    #header h1 {
+        padding: 1vw;
+    }
+
+    nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    #section1 .main_text div {
+        font-size: 120px;
+    }
+
+    #section2 .article1 .left_section h2 {
+        font-size: 130px;
+    }
+
+    #section2 .article1 .left_section .imgwrap,
+    #section2 .article2 .right_section .imgwrap,
+    #section2 .article3 .left_section .imgwrap {
+        height: 60vh;
+    }
+
+    #section2 .article1 .right_section h3,
+    #section2 .article2 .left_section h3,
+    #section2 .article3 .right_section h3 {
+        font-size: 30px;
+    }
+
+    #section2 .article1 .right_section p,
+    #section2 .article2 .left_section p,
+    #section2 .article3 .right_section p {
+        font-size: 13px;
+    }
+
+    #section2 .article1 .right_section .btn,
+    #section2 .article2 .left_section .btn,
+    #section2 .article3 .right_section .btn {
+        font-size: 13px;
+    }
+}
