@@ -25,6 +25,7 @@ body {
 #header span,
 #header em,
 #header nav {
+    font-family: 'Poppins';
     display: block;
     text-transform: uppercase;
 }
@@ -36,7 +37,7 @@ body {
 
 #header h1 em {
     font-size: 24px;
-    font-weight: 200;
+    font-weight: 100;
     letter-spacing: 0.8vw;
 }
 
@@ -50,15 +51,17 @@ body {
 #section1 {
     height: 250vh;
     background: url(../img/mainimage.jpg) center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
     padding-top: 60vh;
     color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
 }
 
 #section1 .sub_text {
+    font-family: 'IropkeBatang';
     font-size: 16px;
     font-weight: 100;
     line-height: 1.5;
@@ -67,8 +70,10 @@ body {
 }
 
 #section1 .main_text {
+    font-family: 'GmarketSans';
     margin-top: 10vh;
-    margin-left: 4vw;
+    /* margin-left: 4vw; */
+    text-align: left;
 }
 
 #section1 .main_text div {

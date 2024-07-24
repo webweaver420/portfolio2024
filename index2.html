@@ -8,7 +8,7 @@
 
     <!-- css -->
     <link rel="stylesheet" href="assets/css/reset.css">
-    <link rel="stylesheet" href="assets/css/style2.css">
+    <link rel="stylesheet" href="assets/css/style3.css">
 
     <!-- web font -->
     <link href="https://webfontworld.github.io/iropke/IropkeBatang.css" rel="stylesheet">
@@ -37,7 +37,7 @@
             개발자가 되겠습니다.
         </p>
         <h1 class="main_text split">
-            <div class="t1 split">Design<br /></div>
+            <div class="t1 split">Design</div>
             <div class="t2 split">Coding</div>
             <div class="t3 split">Experience</div>
         </h1>
@@ -174,16 +174,16 @@
     <script src="https://unpkg.com/split-type"></script>
     <script>
         // .split 클래스를 가진 모든 요소를 찾아서 텍스트를 라인, 단어, 문자로 분할
-        const targets = gsap.utils.toArray(".split");
+        // const targets = gsap.utils.toArray(".split");
 
-        targets.forEach((target) => {
-            let SplitClient = new SplitType(target, {
-                type: "lines, words, chars",
-            });
-            let lines = SplitClient.lines;
-            let words = SplitClient.words;
-            let chars = SplitClient.chars;
-        });
+        // targets.forEach((target) => {
+        //     let SplitClient = new SplitType(target, {
+        //         type: "lines, words, chars",
+        //     });
+        //     let lines = SplitClient.lines;
+        //     let words = SplitClient.words;
+        //     let chars = SplitClient.chars;
+        // });
 
         // Lenis 부드러운 스크롤 애니메이션 설정
         gsap.registerPlugin(ScrollTrigger);
